@@ -100,6 +100,8 @@ namespace Git_Sharp
         {
             lbl_sinal.Text = "?";
             lbl_resultado.Text = "?";
+            txt_1.Clear();
+            txt_2.Clear();
         }
 
         private void btn_sair_Click(object sender, EventArgs e)
@@ -114,8 +116,51 @@ namespace Git_Sharp
             {
                 double a = double.Parse(txt_1.Text);
                 double b = double.Parse(txt_2.Text);
-                lbl_resultado.Text = (a / b).ToString();
-                if
+                if(a > b)
+                {
+                    lbl_resultado.Text = a +  " > " + b;
+                }
+                else if (a < b)
+                {
+                    lbl_resultado.Text = a + " < " + b;
+                }
+                else
+                {
+                    lbl_resultado.Text = a + " = " + b;
+                }
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Informe apenas números");
+            }
+        }
+
+        private void btn_Par_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double a = double.Parse(txt_1.Text);
+                double b = double.Parse(txt_2.Text);
+                if(a % 2 == 0 && b % 2 == 0)
+                {
+                    lbl_resultado.Text = a + " e " + b + " são pares";
+                }
+                else if (a % 2 != 0 && b % 2 != 0)
+                {
+                    lbl_resultado.Text = a + " e " + b + " são Impares";
+                }
+                else if (a % 2 != 0 && b %2 == 0)
+                {
+                    lbl_resultado.Text = a + " é impar e " + b + " é par";
+                }
+                else if (a % 2 == 0 && b %2 != 0)
+                {
+                    lbl_resultado.Text = a + " é par e " + b + " é impar";
+                }
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Informe apenas números");
             }
         }
     }

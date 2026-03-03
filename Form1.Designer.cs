@@ -40,7 +40,7 @@
             this.btn_Mult = new System.Windows.Forms.Button();
             this.btn_div = new System.Windows.Forms.Button();
             this.btn_comp = new System.Windows.Forms.Button();
-            this.btn_Par = new System.Windows.Forms.Button();
+            this.btn_par = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txt_1
@@ -63,12 +63,12 @@
             // 
             // lbl_resultado
             // 
-            this.lbl_resultado.AutoSize = true;
-            this.lbl_resultado.Location = new System.Drawing.Point(171, 171);
+            this.lbl_resultado.Location = new System.Drawing.Point(107, 171);
             this.lbl_resultado.Name = "lbl_resultado";
-            this.lbl_resultado.Size = new System.Drawing.Size(18, 20);
+            this.lbl_resultado.Size = new System.Drawing.Size(148, 20);
             this.lbl_resultado.TabIndex = 2;
             this.lbl_resultado.Text = "?";
+            this.lbl_resultado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txt_2
             // 
@@ -89,7 +89,7 @@
             // 
             // btn_som
             // 
-            this.btn_som.Location = new System.Drawing.Point(387, 52);
+            this.btn_som.Location = new System.Drawing.Point(387, 59);
             this.btn_som.Name = "btn_som";
             this.btn_som.Size = new System.Drawing.Size(123, 41);
             this.btn_som.TabIndex = 5;
@@ -101,7 +101,7 @@
             // 
             this.btn_limpar.Location = new System.Drawing.Point(68, 292);
             this.btn_limpar.Name = "btn_limpar";
-            this.btn_limpar.Size = new System.Drawing.Size(100, 41);
+            this.btn_limpar.Size = new System.Drawing.Size(228, 41);
             this.btn_limpar.TabIndex = 6;
             this.btn_limpar.Text = "Limpar";
             this.btn_limpar.UseVisualStyleBackColor = true;
@@ -119,7 +119,7 @@
             // 
             // btn_sub
             // 
-            this.btn_sub.Location = new System.Drawing.Point(387, 99);
+            this.btn_sub.Location = new System.Drawing.Point(387, 106);
             this.btn_sub.Name = "btn_sub";
             this.btn_sub.Size = new System.Drawing.Size(123, 41);
             this.btn_sub.TabIndex = 8;
@@ -129,7 +129,7 @@
             // 
             // btn_Mult
             // 
-            this.btn_Mult.Location = new System.Drawing.Point(387, 146);
+            this.btn_Mult.Location = new System.Drawing.Point(387, 153);
             this.btn_Mult.Name = "btn_Mult";
             this.btn_Mult.Size = new System.Drawing.Size(123, 41);
             this.btn_Mult.TabIndex = 9;
@@ -139,7 +139,7 @@
             // 
             // btn_div
             // 
-            this.btn_div.Location = new System.Drawing.Point(387, 193);
+            this.btn_div.Location = new System.Drawing.Point(387, 200);
             this.btn_div.Name = "btn_div";
             this.btn_div.Size = new System.Drawing.Size(123, 41);
             this.btn_div.TabIndex = 10;
@@ -149,7 +149,7 @@
             // 
             // btn_comp
             // 
-            this.btn_comp.Location = new System.Drawing.Point(68, 223);
+            this.btn_comp.Location = new System.Drawing.Point(68, 245);
             this.btn_comp.Name = "btn_comp";
             this.btn_comp.Size = new System.Drawing.Size(100, 41);
             this.btn_comp.TabIndex = 11;
@@ -157,21 +157,23 @@
             this.btn_comp.UseVisualStyleBackColor = true;
             this.btn_comp.Click += new System.EventHandler(this.btn_comp_Click);
             // 
-            // btn_Par
+            // btn_par
             // 
-            this.btn_Par.Location = new System.Drawing.Point(196, 223);
-            this.btn_Par.Name = "btn_Par";
-            this.btn_Par.Size = new System.Drawing.Size(100, 41);
-            this.btn_Par.TabIndex = 12;
-            this.btn_Par.Text = "Par Ímpar";
-            this.btn_Par.UseVisualStyleBackColor = true;
+            this.btn_par.Location = new System.Drawing.Point(196, 245);
+            this.btn_par.Name = "btn_par";
+            this.btn_par.Size = new System.Drawing.Size(100, 41);
+            this.btn_par.TabIndex = 12;
+            this.btn_par.Text = "Par Ímpar";
+            this.btn_par.UseVisualStyleBackColor = true;
+            this.btn_par.Click += new System.EventHandler(this.btn_Par_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(580, 366);
-            this.Controls.Add(this.btn_Par);
+            this.Controls.Add(this.btn_par);
             this.Controls.Add(this.btn_comp);
             this.Controls.Add(this.btn_div);
             this.Controls.Add(this.btn_Mult);
@@ -207,7 +209,7 @@
         private System.Windows.Forms.Button btn_Mult;
         private System.Windows.Forms.Button btn_div;
         private System.Windows.Forms.Button btn_comp;
-        private System.Windows.Forms.Button btn_Par;
+        private System.Windows.Forms.Button btn_par;
     }
 }
 
