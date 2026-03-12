@@ -24,7 +24,16 @@ namespace Git_Sharp.formularios
 
         private void comBotõesToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
+        }
 
+        private void MDI_menu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if(MessageBox.Show("Você deseja mesmo sair?", "Sair", 
+            MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2)==DialogResult.No)
+            {
+               e.Cancel = true;
+            }
         }
     }
 }
