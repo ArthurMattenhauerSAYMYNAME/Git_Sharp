@@ -24,7 +24,9 @@ namespace Git_Sharp.formularios
 
         private void comBotõesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            Calculadora novoForm = new Calculadora();
+            novoForm.MdiParent = this;
+            novoForm.Show();
         }
 
         private void MDI_menu_FormClosing(object sender, FormClosingEventArgs e)
@@ -39,6 +41,13 @@ namespace Git_Sharp.formularios
         private void timer1_Tick(object sender, EventArgs e)
         {
             lbl_hora.Text = DateTime.Now.ToString();
+        }
+
+        private void comRadioButtonsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRadio novoForm = new frmRadio();
+            novoForm.MdiParent = this;
+            novoForm.Show();
         }
     }
 }

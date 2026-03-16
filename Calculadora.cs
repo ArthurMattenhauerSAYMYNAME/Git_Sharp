@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Git_Sharp
 {
-    public partial class Form1 : Form
+    public partial class Calculadora : Form
     {
-        public Form1()
+        public Calculadora()
         {
             InitializeComponent();
         }

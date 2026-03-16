@@ -1,6 +1,6 @@
 ﻿namespace Git_Sharp
 {
-    partial class Form1
+    partial class Calculadora
     {
         /// <summary>
         /// Variável de designer necessária.

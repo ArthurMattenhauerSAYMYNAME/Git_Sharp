@@ -72,7 +72,7 @@
             this.ajudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 36);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -85,7 +85,7 @@
             this.toolStripMenuItem1,
             this.sairToolStripMenuItem});
             this.cálculosToolStripMenuItem.Name = "cálculosToolStripMenuItem";
-            this.cálculosToolStripMenuItem.Size = new System.Drawing.Size(93, 32);
+            this.cálculosToolStripMenuItem.Size = new System.Drawing.Size(93, 29);
             this.cálculosToolStripMenuItem.Text = "Cálculos";
             // 
             // comBotõesToolStripMenuItem
@@ -101,6 +101,7 @@
             this.comRadioButtonsToolStripMenuItem.Name = "comRadioButtonsToolStripMenuItem";
             this.comRadioButtonsToolStripMenuItem.Size = new System.Drawing.Size(274, 34);
             this.comRadioButtonsToolStripMenuItem.Text = "Com RadioButtons";
+            this.comRadioButtonsToolStripMenuItem.Click += new System.EventHandler(this.comRadioButtonsToolStripMenuItem_Click);
             // 
             // especiaisToolStripMenuItem
             // 
@@ -141,7 +142,7 @@
             this.horizontalmenteToolStripMenuItem,
             this.verticalmenteToolStripMenuItem});
             this.janelasToolStripMenuItem.Name = "janelasToolStripMenuItem";
-            this.janelasToolStripMenuItem.Size = new System.Drawing.Size(83, 32);
+            this.janelasToolStripMenuItem.Size = new System.Drawing.Size(83, 29);
             this.janelasToolStripMenuItem.Text = "Janelas";
             // 
             // cascataToolStripMenuItem
@@ -168,7 +169,7 @@
             this.sobreToolStripMenuItem,
             this.desenvolvedoresToolStripMenuItem});
             this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
-            this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(74, 32);
+            this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(74, 29);
             this.ajudaToolStripMenuItem.Text = "Ajuda";
             // 
             // sobreToolStripMenuItem
@@ -192,9 +193,9 @@
             this.toolStripButton3,
             this.toolStripSeparator1,
             this.toolStripDropDownButton1});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 33);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 36);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(800, 33);
+            this.toolStrip1.Size = new System.Drawing.Size(800, 38);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -204,9 +205,10 @@
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(34, 28);
+            this.toolStripButton1.Size = new System.Drawing.Size(34, 33);
             this.toolStripButton1.Text = "toolStripButton1";
             this.toolStripButton1.ToolTipText = "Abrir Cálculadora com botões";
+            this.toolStripButton1.Click += new System.EventHandler(this.comBotõesToolStripMenuItem_Click);
             // 
             // toolStripButton2
             // 
@@ -215,7 +217,8 @@
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Size = new System.Drawing.Size(34, 33);
-            this.toolStripButton2.Text = "toolStripButton2";
+            this.toolStripButton2.Text = "Abrir cálculadora com Radio Buttons";
+            this.toolStripButton2.Click += new System.EventHandler(this.comRadioButtonsToolStripMenuItem_Click);
             // 
             // toolStripButton3
             // 
@@ -223,13 +226,13 @@
             this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(34, 33);
+            this.toolStripButton3.Size = new System.Drawing.Size(34, 28);
             this.toolStripButton3.Text = "toolStripButton3";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 38);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 33);
             // 
             // toolStripDropDownButton1
             // 
@@ -237,7 +240,7 @@
             this.toolStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton1.Image")));
             this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
-            this.toolStripDropDownButton1.Size = new System.Drawing.Size(42, 33);
+            this.toolStripDropDownButton1.Size = new System.Drawing.Size(42, 28);
             this.toolStripDropDownButton1.Text = "toolStripDropDownButton1";
             // 
             // statusStrip1
