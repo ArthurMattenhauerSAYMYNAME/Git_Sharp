@@ -126,6 +126,7 @@
             this.visorÚnicoToolStripMenuItem.Name = "visorÚnicoToolStripMenuItem";
             this.visorÚnicoToolStripMenuItem.Size = new System.Drawing.Size(274, 34);
             this.visorÚnicoToolStripMenuItem.Text = "Visor Único";
+            this.visorÚnicoToolStripMenuItem.Click += new System.EventHandler(this.visorÚnicoToolStripMenuItem_Click);
             // 
             // orientadaAToolStripMenuItem
             // 

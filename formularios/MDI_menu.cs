@@ -99,5 +99,25 @@ namespace Git_Sharp.formularios
         {
             Process.Start("notepad.exe");
         }
+
+        private void visorÚnicoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Procura se já existe um formulário Calculadora aberto
+            foreach (Form formAberto in this.MdiChildren)
+            {
+                if (formAberto is calculadora_super)
+                {
+                    formAberto.Activate(); // Traz para frente
+                    return; // Sai do método, não cria outro
+                }
+            }
+
+            // Se não encontrou, cria um novo
+            calculadora_super novoForm = new calculadora_super
+            {
+                MdiParent = this
+            };
+            novoForm.Show();
+        }
     }
 }
