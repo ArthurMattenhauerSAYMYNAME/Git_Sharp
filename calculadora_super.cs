@@ -16,5 +16,35 @@ namespace Git_Sharp
         {
             InitializeComponent();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_apagar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
