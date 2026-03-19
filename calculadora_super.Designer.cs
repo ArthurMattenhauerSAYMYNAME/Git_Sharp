@@ -48,7 +48,7 @@
             this.btn_backspace = new System.Windows.Forms.Button();
             this.btn_raizquadrada = new System.Windows.Forms.Button();
             this.btn_potencia = new System.Windows.Forms.Button();
-            this.btn_apagar = new System.Windows.Forms.Button();
+            this.btn_apagartudo = new System.Windows.Forms.Button();
             this.btn_porcentagem = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.label1 = new System.Windows.Forms.Label();
@@ -278,17 +278,17 @@
             this.btn_potencia.Text = "x^x";
             this.btn_potencia.UseVisualStyleBackColor = true;
             // 
-            // btn_apagar
+            // btn_apagartudo
             // 
-            this.btn_apagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_apagar.Location = new System.Drawing.Point(10, 107);
-            this.btn_apagar.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_apagar.Name = "btn_apagar";
-            this.btn_apagar.Size = new System.Drawing.Size(58, 46);
-            this.btn_apagar.TabIndex = 18;
-            this.btn_apagar.Text = "C";
-            this.btn_apagar.UseVisualStyleBackColor = true;
-            this.btn_apagar.Click += new System.EventHandler(this.btn_apagar_Click);
+            this.btn_apagartudo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_apagartudo.Location = new System.Drawing.Point(10, 107);
+            this.btn_apagartudo.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_apagartudo.Name = "btn_apagartudo";
+            this.btn_apagartudo.Size = new System.Drawing.Size(58, 46);
+            this.btn_apagartudo.TabIndex = 18;
+            this.btn_apagartudo.Text = "C";
+            this.btn_apagartudo.UseVisualStyleBackColor = true;
+            this.btn_apagartudo.Click += new System.EventHandler(this.btn_apagar_Click);
             // 
             // btn_porcentagem
             // 
@@ -324,7 +324,7 @@
             this.Controls.Add(this.btn_backspace);
             this.Controls.Add(this.btn_raizquadrada);
             this.Controls.Add(this.btn_potencia);
-            this.Controls.Add(this.btn_apagar);
+            this.Controls.Add(this.btn_apagartudo);
             this.Controls.Add(this.btn_porcentagem);
             this.Controls.Add(this.btn_igual);
             this.Controls.Add(this.btn_soma);
@@ -371,7 +371,7 @@
         private System.Windows.Forms.Button btn_backspace;
         private System.Windows.Forms.Button btn_raizquadrada;
         private System.Windows.Forms.Button btn_potencia;
-        private System.Windows.Forms.Button btn_apagar;
+        private System.Windows.Forms.Button btn_apagartudo;
         private System.Windows.Forms.Button btn_porcentagem;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.Label label1;
