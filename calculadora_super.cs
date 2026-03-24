@@ -18,8 +18,12 @@ namespace Git_Sharp
         }
         private void f_digitos(object sender, EventArgs e) {
             string digito = ((Button)sender).Text;
-            if (lbl_visor.Text == "0") lbl_visor.Text == "";
-            lbl_visor.Text += digito;
+            if (lbl_visor.Text == "0")
+            {
+                lbl_visor.Text = " ";
+            }
+           
+                
 
         }
 
