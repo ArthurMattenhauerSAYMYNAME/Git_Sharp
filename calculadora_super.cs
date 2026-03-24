@@ -16,23 +16,14 @@ namespace Git_Sharp
         {
             InitializeComponent();
         }
+        private void f_digitos(object sender, EventArgs e) {
+            string digito = ((Button)sender).Text;
+            if (lbl_visor.Text == "0") lbl_visor.Text == "";
+            lbl_visor.Text += digito;
+
+        }
 
         private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_1_Click(object sender, EventArgs e)
         {
 
         }
@@ -43,6 +34,11 @@ namespace Git_Sharp
         }
 
         private void btn_apagar_Click(object sender, EventArgs e)
+        {
+            lbl_visor.Text = "0";
+        }
+
+        private void btn_subtracao_Click(object sender, EventArgs e)
         {
 
         }

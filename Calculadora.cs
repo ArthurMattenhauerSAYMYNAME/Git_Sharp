@@ -163,5 +163,10 @@ namespace Git_Sharp
                 MessageBox.Show("Informe apenas números");
             }
         }
+
+        private void lbl_resultado_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

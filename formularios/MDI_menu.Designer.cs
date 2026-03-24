@@ -51,11 +51,6 @@
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.lbl_stat = new System.Windows.Forms.ToolStripStatusLabel();
-            this.lbl_mens = new System.Windows.Forms.ToolStripStatusLabel();
-            this.lbl_hora = new System.Windows.Forms.ToolStripStatusLabel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.novoToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.abrirToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.salvarToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -66,6 +61,11 @@
             this.colarToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.ajudaToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.lbl_stat = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lbl_mens = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lbl_hora = new System.Windows.Forms.ToolStripStatusLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -124,14 +124,16 @@
             // visorÚnicoToolStripMenuItem
             // 
             this.visorÚnicoToolStripMenuItem.Name = "visorÚnicoToolStripMenuItem";
-            this.visorÚnicoToolStripMenuItem.Size = new System.Drawing.Size(274, 34);
+            this.visorÚnicoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.E)));
+            this.visorÚnicoToolStripMenuItem.Size = new System.Drawing.Size(312, 34);
             this.visorÚnicoToolStripMenuItem.Text = "Visor Único";
             this.visorÚnicoToolStripMenuItem.Click += new System.EventHandler(this.visorÚnicoToolStripMenuItem_Click);
             // 
             // orientadaAToolStripMenuItem
             // 
             this.orientadaAToolStripMenuItem.Name = "orientadaAToolStripMenuItem";
-            this.orientadaAToolStripMenuItem.Size = new System.Drawing.Size(274, 34);
+            this.orientadaAToolStripMenuItem.Size = new System.Drawing.Size(312, 34);
             this.orientadaAToolStripMenuItem.Text = "Orientada a Objetos";
             // 
             // toolStripMenuItem1
@@ -158,21 +160,21 @@
             // cascataToolStripMenuItem
             // 
             this.cascataToolStripMenuItem.Name = "cascataToolStripMenuItem";
-            this.cascataToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.cascataToolStripMenuItem.Size = new System.Drawing.Size(246, 34);
             this.cascataToolStripMenuItem.Text = "Cascata";
             this.cascataToolStripMenuItem.Click += new System.EventHandler(this.cascataToolStripMenuItem_Click);
             // 
             // horizontalmenteToolStripMenuItem
             // 
             this.horizontalmenteToolStripMenuItem.Name = "horizontalmenteToolStripMenuItem";
-            this.horizontalmenteToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.horizontalmenteToolStripMenuItem.Size = new System.Drawing.Size(246, 34);
             this.horizontalmenteToolStripMenuItem.Text = "Horizontalmente";
             this.horizontalmenteToolStripMenuItem.Click += new System.EventHandler(this.horizontalmenteToolStripMenuItem_Click);
             // 
             // verticalmenteToolStripMenuItem
             // 
             this.verticalmenteToolStripMenuItem.Name = "verticalmenteToolStripMenuItem";
-            this.verticalmenteToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.verticalmenteToolStripMenuItem.Size = new System.Drawing.Size(246, 34);
             this.verticalmenteToolStripMenuItem.Text = "Verticalmente";
             this.verticalmenteToolStripMenuItem.Click += new System.EventHandler(this.verticalmenteToolStripMenuItem_Click);
             // 
@@ -256,46 +258,6 @@
             this.toolStripDropDownButton1.Size = new System.Drawing.Size(42, 28);
             this.toolStripDropDownButton1.Text = "toolStripDropDownButton1";
             // 
-            // statusStrip1
-            // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lbl_stat,
-            this.lbl_mens,
-            this.lbl_hora});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 815);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1707, 32);
-            this.statusStrip1.TabIndex = 5;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // lbl_stat
-            // 
-            this.lbl_stat.Name = "lbl_stat";
-            this.lbl_stat.Size = new System.Drawing.Size(143, 25);
-            this.lbl_stat.Text = "Usuário logado: ";
-            this.lbl_stat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl_mens
-            // 
-            this.lbl_mens.Name = "lbl_mens";
-            this.lbl_mens.Size = new System.Drawing.Size(102, 25);
-            this.lbl_mens.Text = "Mensagens";
-            this.lbl_mens.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl_hora
-            // 
-            this.lbl_hora.Name = "lbl_hora";
-            this.lbl_hora.Size = new System.Drawing.Size(104, 25);
-            this.lbl_hora.Text = "Data/Hora: ";
-            this.lbl_hora.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // novoToolStripButton
             // 
             this.novoToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -378,6 +340,46 @@
             this.ajudaToolStripButton.Name = "ajudaToolStripButton";
             this.ajudaToolStripButton.Size = new System.Drawing.Size(34, 28);
             this.ajudaToolStripButton.Text = "&Ajuda";
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lbl_stat,
+            this.lbl_mens,
+            this.lbl_hora});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 815);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1707, 32);
+            this.statusStrip1.TabIndex = 5;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // lbl_stat
+            // 
+            this.lbl_stat.Name = "lbl_stat";
+            this.lbl_stat.Size = new System.Drawing.Size(143, 25);
+            this.lbl_stat.Text = "Usuário logado: ";
+            this.lbl_stat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_mens
+            // 
+            this.lbl_mens.Name = "lbl_mens";
+            this.lbl_mens.Size = new System.Drawing.Size(102, 25);
+            this.lbl_mens.Text = "Mensagens";
+            this.lbl_mens.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_hora
+            // 
+            this.lbl_hora.Name = "lbl_hora";
+            this.lbl_hora.Size = new System.Drawing.Size(104, 25);
+            this.lbl_hora.Text = "Data/Hora: ";
+            this.lbl_hora.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // MDI_menu
             // 

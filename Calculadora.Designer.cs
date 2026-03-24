@@ -69,6 +69,7 @@
             this.lbl_resultado.TabIndex = 2;
             this.lbl_resultado.Text = "?";
             this.lbl_resultado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_resultado.Click += new System.EventHandler(this.lbl_resultado_Click);
             // 
             // txt_2
             // 
@@ -167,7 +168,7 @@
             this.btn_pi.UseVisualStyleBackColor = true;
             this.btn_pi.Click += new System.EventHandler(this.btn_Par_Click);
             // 
-            // Form1
+            // Calculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -187,7 +188,7 @@
             this.Controls.Add(this.lbl_sinal);
             this.Controls.Add(this.txt_1);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "Form1";
+            this.Name = "Calculadora";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

@@ -66,7 +66,6 @@
             this.rb_pot.Name = "rb_pot";
             this.rb_pot.Size = new System.Drawing.Size(122, 24);
             this.rb_pot.TabIndex = 1;
-            this.rb_pot.TabStop = true;
             this.rb_pot.Text = "Potenciação";
             this.rb_pot.UseVisualStyleBackColor = true;
             this.rb_pot.CheckedChanged += new System.EventHandler(this.rb_pot_CheckedChanged);
@@ -78,7 +77,6 @@
             this.rb_mult.Name = "rb_mult";
             this.rb_mult.Size = new System.Drawing.Size(125, 24);
             this.rb_mult.TabIndex = 4;
-            this.rb_mult.TabStop = true;
             this.rb_mult.Text = "Multiplicação";
             this.rb_mult.UseVisualStyleBackColor = true;
             this.rb_mult.CheckedChanged += new System.EventHandler(this.rb_mult_CheckedChanged);
@@ -90,7 +88,6 @@
             this.rb_div.Name = "rb_div";
             this.rb_div.Size = new System.Drawing.Size(85, 24);
             this.rb_div.TabIndex = 3;
-            this.rb_div.TabStop = true;
             this.rb_div.Text = "Divisão";
             this.rb_div.UseVisualStyleBackColor = true;
             this.rb_div.CheckedChanged += new System.EventHandler(this.rb_div_CheckedChanged);
@@ -102,7 +99,6 @@
             this.rb_sub.Name = "rb_sub";
             this.rb_sub.Size = new System.Drawing.Size(90, 24);
             this.rb_sub.TabIndex = 2;
-            this.rb_sub.TabStop = true;
             this.rb_sub.Text = "Subtrair";
             this.rb_sub.UseVisualStyleBackColor = true;
             this.rb_sub.CheckedChanged += new System.EventHandler(this.rb_sub_CheckedChanged);
@@ -110,6 +106,7 @@
             // rb_som
             // 
             this.rb_som.AutoSize = true;
+            this.rb_som.Checked = true;
             this.rb_som.Location = new System.Drawing.Point(6, 35);
             this.rb_som.Name = "rb_som";
             this.rb_som.Size = new System.Drawing.Size(81, 24);
