@@ -182,6 +182,7 @@
             this.btn_virgula.TabIndex = 11;
             this.btn_virgula.Text = ",";
             this.btn_virgula.UseVisualStyleBackColor = true;
+            this.btn_virgula.Click += new System.EventHandler(this.btn_virgula_Click);
             // 
             // btn_igual
             // 
@@ -192,6 +193,7 @@
             this.btn_igual.TabIndex = 15;
             this.btn_igual.Text = "=";
             this.btn_igual.UseVisualStyleBackColor = true;
+            this.btn_igual.Click += new System.EventHandler(this.btn_igual_Click);
             // 
             // btn_soma
             // 
@@ -202,6 +204,7 @@
             this.btn_soma.TabIndex = 14;
             this.btn_soma.Text = "+";
             this.btn_soma.UseVisualStyleBackColor = true;
+            this.btn_soma.Click += new System.EventHandler(this.f_operacoes);
             // 
             // btn_subtracao
             // 
@@ -212,7 +215,7 @@
             this.btn_subtracao.TabIndex = 13;
             this.btn_subtracao.Text = "--";
             this.btn_subtracao.UseVisualStyleBackColor = true;
-            this.btn_subtracao.Click += new System.EventHandler(this.btn_subtracao_Click);
+            this.btn_subtracao.Click += new System.EventHandler(this.f_operacoes);
             // 
             // btn_multiplicacao
             // 
@@ -223,7 +226,7 @@
             this.btn_multiplicacao.TabIndex = 12;
             this.btn_multiplicacao.Text = "X";
             this.btn_multiplicacao.UseVisualStyleBackColor = true;
-            this.btn_multiplicacao.Click += new System.EventHandler(this.button4_Click);
+            this.btn_multiplicacao.Click += new System.EventHandler(this.f_operacoes);
             // 
             // btn_divisao
             // 
@@ -234,6 +237,7 @@
             this.btn_divisao.TabIndex = 23;
             this.btn_divisao.Text = "/";
             this.btn_divisao.UseVisualStyleBackColor = true;
+            this.btn_divisao.Click += new System.EventHandler(this.f_operacoes);
             // 
             // btn_backspace
             // 
@@ -244,6 +248,7 @@
             this.btn_backspace.TabIndex = 22;
             this.btn_backspace.Text = "<==";
             this.btn_backspace.UseVisualStyleBackColor = true;
+            this.btn_backspace.Click += new System.EventHandler(this.btn_backspace_Click);
             // 
             // btn_raizquadrada
             // 
@@ -254,6 +259,7 @@
             this.btn_raizquadrada.TabIndex = 21;
             this.btn_raizquadrada.Text = "²√x";
             this.btn_raizquadrada.UseVisualStyleBackColor = true;
+            this.btn_raizquadrada.Click += new System.EventHandler(this.f_operacoes);
             // 
             // btn_potencia
             // 
@@ -264,6 +270,7 @@
             this.btn_potencia.TabIndex = 19;
             this.btn_potencia.Text = "x²";
             this.btn_potencia.UseVisualStyleBackColor = true;
+            this.btn_potencia.Click += new System.EventHandler(this.f_operacoes);
             // 
             // btn_apagartudo
             // 
@@ -285,6 +292,7 @@
             this.btn_porcentagem.TabIndex = 16;
             this.btn_porcentagem.Text = "%";
             this.btn_porcentagem.UseVisualStyleBackColor = true;
+            this.btn_porcentagem.Click += new System.EventHandler(this.f_operacoes);
             // 
             // lbl_visor
             // 
