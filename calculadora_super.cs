@@ -30,13 +30,16 @@ namespace Git_Sharp
             {
                 lbl_visor.Text += digito;
             }
-
+            this.ActiveControl = null;
         }
         private void f_operacoes(object sender, EventArgs e)
         { 
             PriNumero = decimal.Parse(lbl_visor.Text);
             Operacao = ((Button)sender).Text;
             Limpar = true;
+            lbl_visor2.Text = "";
+            lbl_visor2.Text = PriNumero + " " + Operacao + " ";
+            lbl_visor.Focus();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -48,6 +51,7 @@ namespace Git_Sharp
         {
             PriNumero = 0;
             lbl_visor.Text = "0";
+            lbl_visor2.Text = "";
         }
 
         private void btn_igual_Click(object sender, EventArgs e)
@@ -57,15 +61,19 @@ namespace Git_Sharp
             {
                 case "+":
                     lbl_visor.Text = (PriNumero + SecNumero).ToString();
+                    lbl_visor2.Text += (SecNumero + " " + "=");
                     break;
-                case "-":
+                case "--":
                     lbl_visor.Text = (PriNumero - SecNumero).ToString();
+                    lbl_visor2.Text += (SecNumero + " " + "=");
                     break;
                 case "/":
                     lbl_visor.Text = (PriNumero  / SecNumero).ToString();
+                    lbl_visor2.Text += (SecNumero + " " + "=");
                     break;
                 case "X":
                     lbl_visor.Text = (PriNumero *  SecNumero).ToString();
+                    lbl_visor2.Text += (SecNumero + " " + "=");
                     break;
             }
         }
@@ -88,6 +96,21 @@ namespace Git_Sharp
             if (lbl_visor.Text=="")
             {
                 lbl_visor.Text = "0";
+            }
+        }
+
+        private void calculadora_super_KeyDown(object sender, KeyEventArgs e)
+        {
+            lbl_visor2.Text = e.KeyCode.ToString();
+            Button botao = new Button();
+            if (e.KeyCode == Keys.Escape)
+            {
+                Close();
+            }
+            if (e.KeyCode >= Keys.NumPad0 && e.KeyCode <= Keys.NumPad9)
+            {
+                botao.Text = e.KeyCode.ToString().Substring(6);
+                f_digitos(botao, e);
             }
         }
     }

@@ -51,6 +51,7 @@
             this.btn_apagartudo = new System.Windows.Forms.Button();
             this.btn_porcentagem = new System.Windows.Forms.Button();
             this.lbl_visor = new System.Windows.Forms.Label();
+            this.lbl_visor2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_4
@@ -298,14 +299,23 @@
             // 
             this.lbl_visor.BackColor = System.Drawing.Color.White;
             this.lbl_visor.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_visor.Location = new System.Drawing.Point(18, 40);
+            this.lbl_visor.Location = new System.Drawing.Point(13, 66);
             this.lbl_visor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_visor.Name = "lbl_visor";
-            this.lbl_visor.Size = new System.Drawing.Size(354, 106);
+            this.lbl_visor.Size = new System.Drawing.Size(361, 80);
             this.lbl_visor.TabIndex = 24;
             this.lbl_visor.Text = "0";
             this.lbl_visor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lbl_visor.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // lbl_visor2
+            // 
+            this.lbl_visor2.BackColor = System.Drawing.Color.Silver;
+            this.lbl_visor2.Location = new System.Drawing.Point(15, 9);
+            this.lbl_visor2.Name = "lbl_visor2";
+            this.lbl_visor2.Size = new System.Drawing.Size(357, 48);
+            this.lbl_visor2.TabIndex = 25;
+            this.lbl_visor2.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
             // calculadora_super
             // 
@@ -313,6 +323,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(387, 615);
+            this.Controls.Add(this.lbl_visor2);
             this.Controls.Add(this.lbl_visor);
             this.Controls.Add(this.btn_divisao);
             this.Controls.Add(this.btn_backspace);
@@ -336,8 +347,10 @@
             this.Controls.Add(this.btn_7);
             this.Controls.Add(this.btn_1);
             this.Controls.Add(this.btn_4);
+            this.KeyPreview = true;
             this.Name = "calculadora_super";
             this.Text = "Super Calculadora";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.calculadora_super_KeyDown);
             this.ResumeLayout(false);
 
         }
@@ -367,5 +380,6 @@
         private System.Windows.Forms.Button btn_apagartudo;
         private System.Windows.Forms.Button btn_porcentagem;
         private System.Windows.Forms.Label lbl_visor;
+        private System.Windows.Forms.Label lbl_visor2;
     }
 }
