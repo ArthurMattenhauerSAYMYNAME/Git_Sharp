@@ -173,6 +173,7 @@
             this.btn_inverte.TabIndex = 10;
             this.btn_inverte.Text = "+/-";
             this.btn_inverte.UseVisualStyleBackColor = true;
+            this.btn_inverte.Click += new System.EventHandler(this.btn_inverte_Click);
             // 
             // btn_virgula
             // 
@@ -350,6 +351,7 @@
             this.KeyPreview = true;
             this.Name = "calculadora_super";
             this.Text = "Super Calculadora";
+            this.Load += new System.EventHandler(this.calculadora_super_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.calculadora_super_KeyDown);
             this.ResumeLayout(false);
 
