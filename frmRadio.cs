@@ -51,6 +51,14 @@ namespace Git_Sharp
                     double a = double.Parse(txt_pri.Text);
                     double b = double.Parse(txt_sec.Text);
                     lbl_resp.Text = (a / b).ToString();
+                    if (txt_sec.Text == "0")
+                    {
+                        MessageBox.Show("Não é possível dividir um número por 0", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        lbl_sinal.Text = "?";
+                        lbl_resp.Text = "?";
+                        txt_pri.Clear();
+                        txt_sec.Clear();
+                    }
                 }
                 if (rb_pot.Checked)
                 {
@@ -97,6 +105,11 @@ namespace Git_Sharp
         private void btn_fec_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void frmRadio_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

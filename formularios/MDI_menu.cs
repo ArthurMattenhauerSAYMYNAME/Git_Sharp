@@ -15,6 +15,7 @@ namespace Git_Sharp.formularios
     {
         public MDI_menu()
         {
+            this.WindowState = FormWindowState.Maximized;
             InitializeComponent();
         }
 
@@ -118,6 +119,11 @@ namespace Git_Sharp.formularios
                 MdiParent = this
             };
             novoForm.Show();
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

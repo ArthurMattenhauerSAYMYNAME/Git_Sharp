@@ -207,6 +207,7 @@
             this.Controls.Add(this.gb_Ope);
             this.Name = "frmRadio";
             this.Text = "frmRadio";
+            this.Load += new System.EventHandler(this.frmRadio_Load);
             this.gb_Ope.ResumeLayout(false);
             this.gb_Ope.PerformLayout();
             this.ResumeLayout(false);

@@ -89,10 +89,16 @@ namespace Git_Sharp
             catch (FormatException)
             {
                 MessageBox.Show("Informe apenas números");
+                lbl_resultado.Text = ("Informe apenas números");
             }
-            catch (DivideByZeroException)
+           
+            if (txt_2.Text == "0")
             {
-                MessageBox.Show("Impossível divisão por zero");
+                MessageBox.Show("Não é possível dividir um número por 0", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                lbl_sinal.Text = "?";
+                lbl_resultado.Text = "?";
+                txt_1.Clear();
+                txt_2.Clear();
             }
         }
 
